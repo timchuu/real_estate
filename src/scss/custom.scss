@@ -12,13 +12,14 @@ $my-range-thumb:  #33C490;
 $dark: $main-color;
 $custom-range-thumb-bg:              $my-range-thumb;
 
+
 //custom fonts
 
 $my-font:  'Montserrat', sans-serif;
 $font-family-base:            $my-font;
 
 
-
+//scss imports
 
 //import all of bootstrap
 
@@ -27,6 +28,48 @@ $font-family-base:            $my-font;
 
 //stylesheet
 
+
+//base styles
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  display: -webkit-box;
+
+}
+
+//nav custom
+
+.my-search-input {
+  background: {
+        color: $main-color;
+
+  }
+  border-radius: 20px;
+  height: 35px;
+  font-size: 16px;
+}
+
+.my-search {
+    position: relative;
+    input {
+    text-indent: 32px;
+
+  }
+}
+
+span.fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: $my-range-thumb;
+}
+
+//1st comlumn sidebar
 .sidebar { position:fixed; top:0; bottom:0; left:0; z-index: 100;}
 
 #side-filter { margin-top:100px;}
@@ -37,6 +80,7 @@ hr.style-one  {
     margin:0;
 }
 
+//
 .my-card-text {font-size: 12px;}
 
 
