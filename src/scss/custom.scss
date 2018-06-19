@@ -4,6 +4,9 @@
 //custom variables
 
 //colors
+$link-color:                #fff;
+$link-hover-color:          darken($link-color, 15%) !default;
+
 
 $main-color: #2C3849;
 $bar-color: #D8D8D8;
@@ -11,7 +14,7 @@ $side-bar-color: lighten($bar-color, 10%);
 $my-range-thumb:  #33C490;
 $dark: $main-color;
 $custom-range-thumb-bg:              $my-range-thumb;
-
+$dropdown-link-hover-bg: $my-range-thumb;
 
 //custom fonts
 
@@ -44,32 +47,64 @@ section {
 
 //nav custom
 
+
+  .fa-home {
+        color:$my-range-thumb;
+      }
+
 .my-search-input {
-  background: {
-        color: $main-color;
+        background-color: $main-color;
+        border-radius: 20px;
+        height: 35px;
+        font-size: 16px;
+
 
   }
-  border-radius: 20px;
-  height: 35px;
-  font-size: 16px;
+
+  .form-control:focus {
+      color: white;
+      background-color: $main-color;
+      opacity: 0.5;
+      border-color: $my-range-thumb; //original color #80bdff
 }
+.form-control::placeholder {
+    color: white;
+    opacity: 0.5; }
 
 .my-search {
     position: relative;
+
     input {
     text-indent: 32px;
+
 
   }
 }
 
-span.fa-search {
+button.fa-search {
   position: absolute;
   top: 10px;
   left: 10px;
   color: $my-range-thumb;
-}
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
 
+}
 //1st comlumn sidebar
+// custom selected
+
+.custom-select {
+    background: none;
+}
+.custom-select:focus {
+    border-color: $my-range-thumb;
+
+  }
+  .my-op:hover {
+    background-color: red;
+  }
 .sidebar { position:fixed; top:0; bottom:0; left:0; z-index: 100;}
 
 #side-filter { margin-top:100px;}
