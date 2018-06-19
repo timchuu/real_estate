@@ -1,7 +1,49 @@
+  //custom fonts
 
+   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+//custom variables
+
+//colors
+
+$main-color: #2C3849;
+$bar-color: #D8D8D8;
+$side-bar-color: lighten($bar-color, 10%);
+$my-range-thumb:  #33C490;
+$dark: $main-color;
+$custom-range-thumb-bg:              $my-range-thumb;
+
+//custom fonts
+
+$my-font:  'Montserrat', sans-serif;
+$font-family-base:            $my-font;
 
 
 
 
 //import all of bootstrap
-  @import "node_modules/bootstrap/scss/bootstrap"
+
+  @import "node_modules/bootstrap/scss/bootstrap";
+
+
+//stylesheet
+
+.sidebar { position:fixed; top:0; bottom:0; left:0; z-index: 100;}
+
+#side-filter { margin-top:100px;}
+
+hr.style-one  {
+    border: 1px solid black;
+    width:100%;
+    margin:0;
+}
+
+.my-card-text {font-size: 12px;}
+
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 48px; /* Space for fixed navbar */
+}

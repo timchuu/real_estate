@@ -52,7 +52,7 @@ gulp.task('scripts', function(){
 // Watch Sass & Serve
   gulp.task('serve', ['sass'], function() {
     browserSync.init({
-        server: "./src"
+        server: "./dist"
     });
 
     gulp.watch(['node_modules/bootstrap/scss/*.scss','src/scss/*.scss'], ['sass']);
