@@ -33,7 +33,7 @@ $font-family-base:            $my-font;
 
 
 //base styles
-
+body {overflow-x: hidden;}
 .wrapper {
   width: 100%;
   max-width: 1100px;
@@ -125,4 +125,17 @@ hr.style-one  {
 
 [role="main"] {
   padding-top: 48px; /* Space for fixed navbar */
+}
+
+//main showcase area
+
+.fa-map-marker {
+  color: $my-range-thumb;
+
+}
+
+h5.card-title {
+  font: {
+    size:14px;
+  }
 }
