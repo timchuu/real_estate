@@ -6339,8 +6339,8 @@ button.fa-search {
 
 .sidebar {
   position: fixed;
-  top: 0;
   bottom: 0;
+  top: 0;
   left: 0;
   z-index: 100; }
 
@@ -6367,3 +6367,16 @@ hr.style-one {
 
 h5.card-title {
   font-size: 14px; }
+
+/*.my-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $main-color;
+  z-index: 1030;
+
+
+}
+*/
+.my-main {
+  position: relative; }
