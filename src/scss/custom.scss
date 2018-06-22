@@ -121,8 +121,9 @@ hr.style-one  {
     margin:0;
 }
 
-//
+
 .my-card-text {font-size: 12px;}
+
 
 
 /*
@@ -147,10 +148,48 @@ h5.card-title {
 }
 
 
+
 .main-page {
   position: relative;
   padding-bottom: 300px;
 }
+
+.a-hover .my-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  height:100%;
+  width:100%;
+  opacity:0;
+  transition: .3s ease;
+  background-color: gray;
+}
+
+.a-hover:hover .my-overlay {
+  opacity:0.6;
+}
+
+.my-overlay .my-span {
+  padding: 8px;
+  color: red;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+ .my-overlay:hover .my-span {
+  opacity: 1;
+  border: 1px solid red;
+  transition: all 0.3s ease;
+}
+
 
 //footer Content
 
