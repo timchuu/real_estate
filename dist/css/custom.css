@@ -6299,14 +6299,21 @@ body {
 section {
   display: -webkit-box; }
 
+.nav-item {
+  font-size: 0.8em; }
+
 .fa-home {
-  color: #33C490; }
+  color: #33C490;
+  padding-right: 5px; }
+
+.fa-cube, .fa-inbox, .fa-bath {
+  padding-right: 5px; }
 
 .my-search-input {
   background-color: #2C3849;
   border-radius: 20px;
   height: 35px;
-  font-size: 16px; }
+  font-size: 0.8em; }
 
 .form-control:focus {
   color: white;
@@ -6370,12 +6377,15 @@ hr.style-one {
 .fa-map-marker {
   color: #33C490; }
 
+.my-room-info i {
+  color: #33C490; }
+
 h5.card-title {
   font-size: 14px; }
 
 .main-page {
   position: relative;
-  padding-bottom: 300px; }
+  padding-bottom: 400px; }
 
 .a-hover .my-overlay {
   position: absolute;
@@ -6394,7 +6404,7 @@ h5.card-title {
 
 .my-overlay .my-span {
   padding: 8px;
-  color: red;
+  color: #33C490;
   font-size: 15px;
   position: absolute;
   top: 50%;
@@ -6405,7 +6415,7 @@ h5.card-title {
 
 .my-overlay:hover .my-span {
   opacity: 1;
-  border: 1px solid red;
+  border: 1px solid #33C490;
   transition: all 0.3s ease; }
 
 .footer {
