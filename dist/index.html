@@ -17,14 +17,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#"><i class="fas fa-home"></i>MyRealEstate</a>
-      <form class="form-inline ml-auto d-none d-md-block d-md-none my-search">
-        <input class="form-control  mr-sm-2 my-search-input " type="search" placeholder="San Francisco, CA" aria- label="search">
-        <button type="submit" class="my-button fas fa-search"></button>
-      </form>
-      <a class="nav-item nav-link ml-auto" href="#">Log in</a>
-      <a class="nav-item nav-link" href="#">Sign up</a>
-    </div>
+        <a class="navbar-brand" href="#"><i class="fas fa-home"></i>MyRealEstate</a>
+        <form class="form-inline ml-auto d-none d-md-block d-md-none my-search">
+          <input class="form-control  mr-sm-2 my-search-input " type="search" placeholder="San Francisco, CA" aria- label="search">
+          <button type="submit" class="my-button fas fa-search"></button>
+        </form>
+        <a class="nav-item nav-link ml-auto" href="#">Log in</a>
+        <a class="nav-item nav-link" href="#">Sign up</a>
+      </div>
     </nav>
     <!--/nav-->
   </header>
@@ -50,8 +50,6 @@
       <nav class="col-md-2 d-none d-md-block d-md-none bg-light sidebar">
         <div class="sticky-sidebar">
           <div class="nav flex-column " id="side-filter">
-            <h5>Filters</h5>
-            <hr class="style-one">
             <h6>Property Type</h6>
             <select class="custom-select custom-select-sm mt-2 mb-3">
       <option selected>Any</option>
@@ -86,11 +84,12 @@
       <option value="3">3+</option>
     </select>
             </div>
-
+<!-- TODO: spacing and sidebar functionality -->
             <div class="row">
               <h6>Amnenities</h6>
             </div>
             <!-- amenities-->
+  <!-- TODO: change color of check marks to theme green -->
             <div class="row">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -123,211 +122,216 @@
 
       </nav>
       <!--end nav sidebar-->
-      <!---------------------------------------------------------
-  start main---------------------------------------------->
+
+  <!--start main---------------------------------------------->
+  <!-- TODO: fix padding of span-info objects, create overflow -->
       <main role="main" class=" my-main col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div class="grid"><!--beginning of isotope grid-->
         <div class="row">
 
           <div class="card-deck">
 
-  <div class="card">
-    <a class="a-hover" href="#">
+            <div class="card element-item house">
+              <a class="a-hover" href="#">
     <img class="card-img-top img-responsive " src="img/feature2.jpg" alt="Card image cap">
     <div class="my-overlay"><span class="my-span">View Details</span></div>
     </a>
-    <div class="card-body">
-      <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4835 Hillcrest Circle</h5>
-      <p class="card-text"></p>
-    </div>
-    <div class="card-footer">
-      <div class="row">
-        <ul class="my-room nav">
-          <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-          <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-          <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-        </ul>
-      </div>
-    </div>
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4835 Hillcrest Circle</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
 
-  </div>
+            </div>
 
 
-  <div class="card ">
-    <a class="a-hover" href="#">
+            <div class="card element-item house Townhouse">
+              <a class="a-hover" href="#">
     <img class="card-img-top img-responsive" src="img/feature1.jpg" alt="Card image cap">
     <div class="my-overlay"><span class="my-span">View Details</span></div>
     </a>
-    <div class="card-body">
-      <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4473 Poe Lane</h5>
-      <p class="card-text"></p>
-    </div>
-    <div class="card-footer">
-    <div class="row">
-      <ul class="my-room nav">
-        <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-        <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-        <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-      </ul>
-    </div>
-    </div>
-  </div>
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4473 Poe Lane</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
 
-  <div class="card">
-    <a  class="a-hover" href="#">
+            <div class="card element-item  condo">
+              <a class="a-hover" href="#">
     <img class="card-img-top img-responsive" src="img/feature3.jpg" alt="Card image cap">
     <div class="my-overlay"><span class="my-span">View Details</span></div>
     </a>
-    <div class="card-body">
-      <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2879 Sycamore Street</h5>
-      <p class="card-text"></p>
-    </div>
-    <div class="card-footer">
-      <div class="row">
-        <ul class="my-room nav">
-          <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-          <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-          <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2879 Sycamore Street</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
 
 
-</div>
-</div><!--first row-->
-<div class="row">
-  <div class="card-deck mt-4">
-    <div class="card">
-      <a href="#" class="a-hover">
+          </div>
+        </div>
+        <!--first row-->
+        <div class="row">
+          <div class="card-deck mt-4">
+            <div class="card element-item condo apartment">
+              <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature4.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <div class="card-body">
-        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <div class="row">
-          <ul class="my-room nav">
-            <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-            <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-            <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#" class="a-hover">
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card element-item apartment townhouse">
+              <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature5.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <div class="card-body">
-        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>1065 Thunder Road</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <div class="row">
-          <ul class="my-room nav">
-            <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-            <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-            <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#" class="a-hover">
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>1065 Thunder Road</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card element-item">
+              <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature6.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <div class="card-body">
-        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>3343 Better Street</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <div class="row">
-          <ul class="my-room nav">
-            <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-            <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-            <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-          </ul>
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>3343 Better Street</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div><!--main second row/-->
+        <!--main second row/-->
 
-<div class="row">
-  <div class="card-deck mt-4">
+        <div class="row">
+          <div class="card-deck mt-4">
 
-    <div class="card">
-      <a href="#" class="a-hover">
+            <div class="card element-item">
+              <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature7.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <div class="card-body">
-        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4847 Mandan Road</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <div class="row">
-          <ul class="my-room nav">
-            <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-            <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-            <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <a href="#" class="a-hover">
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4847 Mandan Road</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card element-item">
+              <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature8.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <div class="card-body">
-        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>3091 Mount Street</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <div class="row">
-          <ul class="my-room nav">
-            <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-            <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-            <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <a href="" class="a-hover">
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>3091 Mount Street</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card element-item">
+              <a href="" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature9.jpg" alt="Card image cap">
         <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <div class="card-body">
-        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2143 Diane Street</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <div class="row">
-          <ul class="my-room nav ">
-            <li class="my-room-info"><i class="fas fa-cube"></i>540m2</li>
-            <li class="my-room-info"><i class="fas fa-inbox"></i>6 rooms</li>
-            <li class="my-room-info"><i class="fas fa-bath"></i>4 bathrooms</li>
-          </ul>
+              <div class="card-body">
+                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2143 Diane Street</h5>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <ul class="my-room nav ">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div><!--main second row/-->
+        <!--main second row/-->
 
-      <!--  </div>-->
+        <!--  </div>-->
         <!--/first gallery row-->
 
 
 
-
+</div> <!--/isotope-->
 
       </main>
       <!--/main-->
@@ -335,117 +339,119 @@
     </div>
     <!--/main-row-->
 
-      <div class="footer"><!-- Footer -->
-<footer class="page-footer font-small blue pt-4 mt-4">
+    <div class="footer">
+      <!-- Footer -->
+      <footer class="page-footer font-small blue pt-4 mt-4">
 
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
 
-    <!-- Grid row -->
-    <div class="row">
+          <!-- Grid row -->
+          <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-4 mt-md-0 mt-3">
+            <!-- Grid column -->
+            <div class="col-md-4 mt-md-0 mt-3">
 
-        <!-- Content -->
-        <h5 class="navbar-brand" href="#"><i class="fas fa-home"></i>MyRealEstate</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius urna turpis, in ullamcorper felis mollis eu. Integer vel nisl nec metus consequat laoreet. In nunc risus, ultrices vitae urna vitae, tincidunt aliquam libero. Curabitur eu lorem orci. Vivamus malesuada convallis lectus, id congue massa vehicula interdum.</p>
+              <!-- Content -->
+              <h5 class="navbar-brand" href="#"><i class="fas fa-home"></i>MyRealEstate</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius urna turpis, in ullamcorper felis mollis eu. Integer vel nisl nec metus consequat laoreet. In nunc risus, ultrices vitae urna vitae, tincidunt aliquam libero. Curabitur
+                eu lorem orci. Vivamus malesuada convallis lectus, id congue massa vehicula interdum.</p>
 
-      </div>
-      <!-- Grid column -->
+            </div>
+            <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none pb-3">
+            <hr class="clearfix w-100 d-md-none pb-3">
 
-      <!-- Grid column -->
-      <div class="col-md-2 mb-md-0 mb-3">
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3">
 
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
 
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Home</a>
-          </li>
-          <li>
-            <a href="#!">For landlords</a>
-          </li>
-          <li>
-            <a href="#!">For tenants</a>
-          </li>
-          <li>
-            <a href="#!">Pricing</a>
-          </li>
-        </ul>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Home</a>
+                </li>
+                <li>
+                  <a href="#!">For landlords</a>
+                </li>
+                <li>
+                  <a href="#!">For tenants</a>
+                </li>
+                <li>
+                  <a href="#!">Pricing</a>
+                </li>
+              </ul>
 
-      </div>
-      <!-- Grid column -->
-      <div class="col-md-2 mb-md-0 mb-3">
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3">
 
-        <!-- Links -->
-        <h5 class="text-uppercase">Company</h5>
+              <!-- Links -->
+              <h5 class="text-uppercase">Company</h5>
 
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Contact us</a>
-          </li>
-          <li>
-            <a href="#!">About us</a>
-          </li>
-          <li>
-            <a href="#!">FAQ</a>
-          </li>
-        </ul>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Contact us</a>
+                </li>
+                <li>
+                  <a href="#!">About us</a>
+                </li>
+                <li>
+                  <a href="#!">FAQ</a>
+                </li>
+              </ul>
 
-      </div>
-      <!-- Grid column -->
-      <div class="col-md-2 mb-md-0 mb-3">
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 mb-md-0 mb-3">
 
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
 
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
 
-      </div>
-      <!-- Grid column -->
+            </div>
+            <!-- Grid column -->
 
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="#">MyRealEstate.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
     </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="#">MyRealEstate.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-</div>
   </div>
   <!--end main page-->
 
   <!--js-->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js'></script>
+  <script src='node_modules/isotope-layout/dist/isotope.pkgd.js'></script>
+  <script src='node_modules/popper.js/dist/popper.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js'></script>
-
+  <script src="dist/js/main.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,9 @@ $dropdown-link-hover-bg: $my-range-thumb;
 $my-font:  'Montserrat', sans-serif;
 $font-family-base:            $my-font;
 
+//custom spacing
 
+$my-fa-p: 5px;
 //scss imports
 
 //import all of bootstrap
@@ -61,7 +63,7 @@ section {
         padding-right: 5px;
       }
 .fa-cube, .fa-inbox, .fa-bath {
-  padding-right:5px;
+  padding-right: $my-fa-p;
 }
 
 
@@ -150,6 +152,10 @@ hr.style-one  {
 
 .my-room-info i {
   color: $my-range-thumb;
+}
+
+.span-info {
+  padding-right: $my-fa-p;
 }
 
 h5.card-title {

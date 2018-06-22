@@ -6380,6 +6380,9 @@ hr.style-one {
 .my-room-info i {
   color: #33C490; }
 
+.span-info {
+  padding-right: 5px; }
+
 h5.card-title {
   font-size: 14px; }
 
