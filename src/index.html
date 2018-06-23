@@ -7,6 +7,15 @@
   <title>MyRealEstate</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom.css">
+  <script>
+
+    // On document ready:
+
+  
+
+  </script>
+
+
 </head>
 
 <body>
@@ -36,13 +45,16 @@
 
     <div class="d-flex justify-content-end flex-wrap flex-md-nowrap align-items-center mt-3 pt-5 pb-2 mb-3 border-bottom">
       <!-- TODO: fix sorting js -->
-      <div class="col-md-3">
-        <select class="custom-select custom-select-sm mt-2 mb-3 filter-select">
-  <option selected value="*">Sort: Featured</option>
-  <option class="my-op" value="1">Newest</option>
+      <div class="col-md-3 controls">
+
+
+        <select class="custom-select custom-select-sm mt-2 mb-3">
+  <option class="unselected" value="">Sort: Featured</option>
+  <option  value="1">Newest</option>
   <option value="2">Price(Lo-Hi)</option>
   <option value="3">Price(Hi-Lo)</option>
   </select>
+
       </div>
 
     </div>
@@ -50,15 +62,18 @@
     <div class="row">
       <nav class="col-md-2 d-none d-md-block d-md-none bg-light sidebar">
         <div class="sticky-sidebar">
-          <div class="nav flex-column filters " id="side-filter">
+          <form id="#filterform" >
+
+          <div class="nav flex-column controls filter " id="side-filter">
             <h6>Property Type</h6>
-            <select class="custom-select custom-select-sm mt-2 mb-3 selectFilter selectCategory" data-filter-group="category">
-      <option  data-filter-value="*" value="">Any</option>
-      <option data-filter-value=".house" value=".house">House</option>
-      <option data-filter-value=".apartment" value=".apartment">Apartment</option>
-      <option data-filter-value=".condo" value=".condo">Condo</option>
-      <option data-filter-value=".townhouse" value=".townhouse">Townhouse</option>
+            <select class="custom-select custom-select-sm mt-2 mb-3" id="FilterSelect">
+      <option  data-filter="all" value="all">Any</option>
+      <option  data-filter=".category-1" value=".category-1">House</option>
+      <option data-filter=".category-2" value=".category-2">Apartment</option>
+      <option  data-filter=".category-3" value=".category-3">Condo</option>
+      <option data-filter=".category-4" value=".category-4">Townhouse</option>
     </select>
+    </form>
             <h6>Price Range</h6>
 
             <div class="form-group">
@@ -127,12 +142,12 @@
   <!--start main---------------------------------------------->
   <!-- TODO: fix padding of span-info objects, create overflow -->
       <main role="main" class=" d-flex my-main col-md-9 ml-sm-auto col-lg-10 px-4">
-
+      <div id="container">
         <div class="row">
 
           <div class="card-deck ">
-<div class="grid"><!--beginning of isotope grid-->
-            <div class="card element-item house p-type">
+
+            <div class="card mix category-1 ">
               <a class="a-hover" href="#">
     <img class="card-img-top img-responsive " src="img/feature2.jpg" alt="Card image cap">
     <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -154,7 +169,7 @@
             </div>
 
 
-            <div class="card element-item house Townhouse p-type">
+            <div class="card mix  house Townhouse ">
               <a class="a-hover" href="#">
     <img class="card-img-top img-responsive" src="img/feature1.jpg" alt="Card image cap">
     <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -175,7 +190,7 @@
             </div>
 
 
-            <div class="card element-item  condo p-type">
+            <div class="card mix condo ">
               <a class="a-hover" href="#">
     <img class="card-img-top img-responsive" src="img/feature3.jpg" alt="Card image cap">
     <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -198,11 +213,11 @@
 
 
           </div><!--/card deck-->
-
+          </div>
         <!--first row-->
         <div class="row">
           <div class="card-deck mt-4">
-            <div class="card element-item condo apartment p-type">
+            <div class="card mix condo apartment ">
               <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature4.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -221,7 +236,7 @@
                 </div>
               </div>
             </div>
-            <div class="card element-item apartment townhouse p-type">
+            <div class="card mix  apartment townhouse ">
               <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature5.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -240,7 +255,7 @@
                 </div>
               </div>
             </div>
-            <div class="card element-item apartment p-type">
+            <div class="card  mix apartment ">
               <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature6.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -266,7 +281,7 @@
         <div class="row">
           <div class="card-deck mt-4">
 
-            <div class="card element-item townhouse house p-type">
+            <div class="card mix townhouse house ">
               <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature7.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -285,7 +300,7 @@
                 </div>
               </div>
             </div>
-            <div class="card element-item townhouse p-type">
+            <div class="card mix townhouse ">
               <a href="#" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature8.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -304,7 +319,7 @@
                 </div>
               </div>
             </div>
-            <div class="card element-item condo p-type">
+            <div class="card mix  condo ">
               <a href="" class="a-hover">
       <img class="card-img-top img-responsive" src="img/feature9.jpg" alt="Card image cap">
         <div class="my-overlay"><span class="my-span">View Details</span></div>
@@ -334,10 +349,11 @@
 
 
 
-  </div> <!--/isotope-->
+
 
 </div>
 <!--/main-row-->
+
       </main>
       <!--/main-->
 
@@ -453,12 +469,16 @@
 
   <!--<script src='node_modules/isotope-layout/dist/isotope.pkgd.js'></script>-->
 <!--  <script src='node_modules/popper.js/dist/popper.js'></script>-->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js'></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-  <script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
+
+<script src="js/custom.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.js'></script>
+
+
 </body>
 
 </html>

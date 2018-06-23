@@ -6386,6 +6386,9 @@ hr.style-one {
 h5.card-title {
   font-size: 14px; }
 
+.mix {
+  display: none; }
+
 .main-page {
   position: relative;
   padding-bottom: 400px; }

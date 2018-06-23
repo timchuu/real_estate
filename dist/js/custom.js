@@ -1,1 +1,1 @@
-$(document).ready(function(){$(function(){var r,o=$(".grid"),n={};o.isotope({itemSelector:".p-type",filter:function(){var t=$(this);return!r||t.is(r)}}),$(".select").change(function(){var t=$(this),e=t.attr("data-filter-group");n[e]=t.find(":selected").attr("data-filter-value");for(var i in n)isoFilters.push(n[i]);return r=isoFilters.join(""),console.log(r),o.isotope(),!1})})});
+$(document).ready(function(){mixitup("#container")});
