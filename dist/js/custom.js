@@ -1,1 +1,1 @@
-$(document).ready(function(){mixitup("#container")});
+var containerEl=document.querySelector("#container"),selectFilter=document.querySelector(".select-filter"),selectSort=document.querySelector(".select-sort"),mixer=mixitup(containerEl);selectFilter.addEventListener("change",function(){var e=selectFilter.value;mixer.filter(e)}),selectSort.addEventListener("change",function(){var e=selectSort.value;mixer.sort(e)});
