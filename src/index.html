@@ -48,11 +48,12 @@
       <div class="col-md-3 controls">
 
 
-        <select class="custom-select custom-select-sm mt-2 mb-3">
+        <select  class="custom-select custom-select-sm mt-2 mb-3 select-sort">
   <option class="unselected" value="">Sort: Featured</option>
-  <option  value="1">Newest</option>
-  <option value="2">Price(Lo-Hi)</option>
-  <option value="3">Price(Hi-Lo)</option>
+  <option  value="default:asc">Asc</option>
+  <option  value="default:desc">Desc</option>
+  <option value="price:asc">Price(Lo-Hi)</option>
+  <option value="price:desc">Price(Hi-Lo)</option>
   </select>
 
       </div>
@@ -141,210 +142,185 @@
 
   <!--start main---------------------------------------------->
   <!-- TODO: fix padding of span-info objects, create overflow -->
-      <main role="main" class=" d-flex my-main col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div id="container">
-      <!--  <div class="row">-->
-
-          <div class="card-deck ">
-
-            <div class="card mix green ">
-              <a class="a-hover" href="#">
-    <img class="card-img-top img-responsive " src="img/feature2.jpg" alt="Card image cap">
-    <div class="my-overlay"><span class="my-span">View Details</span></div>
-    </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4835 Hillcrest Circle</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
+      <main role="main" class="d-flex my-main col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="container" id="container">
+        <div class="row">
+          <div class="card-columns">
+    <div class="card mix pink blue" data-price="59.99" data-published-date="2016-11-24">
+      <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
                     <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
                     <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
                   </ul>
                 </div>
-              </div>
-
-            </div>
-
-
-            <div class="card mix green blue ">
-              <a class="a-hover" href="#">
-    <img class="card-img-top img-responsive" src="img/feature1.jpg" alt="Card image cap">
-    <div class="my-overlay"><span class="my-span">View Details</span></div>
-    </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4473 Poe Lane</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
+      </div>
+    </div>
+      <div class="card mix blue green" data-price="14.99" data-published-date="2016-11-24">
+          <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
                     <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
                     <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
                   </ul>
                 </div>
-              </div>
-            </div>
-
-
-            <div class="card mix pink ">
-              <a class="a-hover" href="#">
-    <img class="card-img-top img-responsive" src="img/feature3.jpg" alt="Card image cap">
-    <div class="my-overlay"><span class="my-span">View Details</span></div>
-    </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2879 Sycamore Street</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
+      </div>
+    </div>
+      <div class="card mix pink" data-published-date="2016-10-12">
+        <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
                     <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
                     <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
                   </ul>
                 </div>
-              </div>
-            </div>
-
-
-
-        <!--  </div>/card deck-->
-        <!--  </div>-->
+      </div>
+    </div>
+      <div class="card mix blue" data-published-date="2016-09-30">
+          <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+      <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+      </div>
+    </div>
+      <div class="card mix green" data-published-date="2016-09-03">
+        <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+      </div>
+    </div>
+      <div class="card pink green" data-published-date="2016-09-03">
+        <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+      <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+      </div>
+    </div>
+      <div class="card mix green" data-published-date="2016-04-30">
+        <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+      </div>
+    </div>
+      <div class="card mix green blue" data-published-date="2016-04-24" >
+        <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+      <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+      </div>
+    </div>
+      <div class="card mix pink" data-published-date="2016-03-12" >
+          <a href="#" class="a-hover">
+      <img class="card-img-top img-fluid" src="http://via.placeholder.com/280x160" alt="Card image cap">
+      <div class="my-overlay"><span class="my-span">View Details</span></div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer">
+        <div class="row">
+                  <ul class="my-room nav">
+                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                  </ul>
+                </div>
+      </div>
+    </div>
+      </div>
+      <!--card columns/-->
+        </div>
         <!--first row-->
-      <!--  <div class="row">-->
-        <!--  <div class="card-deck mt-4">-->
-            <div class="card mix pink blue ">
-              <a href="#" class="a-hover">
-      <img class="card-img-top img-responsive" src="img/feature4.jpg" alt="Card image cap">
-      <div class="my-overlay"><span class="my-span">View Details</span></div>
-      </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <ul class="my-room nav">
-                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card mix  blue green ">
-              <a href="#" class="a-hover">
-      <img class="card-img-top img-responsive" src="img/feature5.jpg" alt="Card image cap">
-      <div class="my-overlay"><span class="my-span">View Details</span></div>
-      </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>1065 Thunder Road</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <ul class="my-room nav">
-                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card  mix pink ">
-              <a href="#" class="a-hover">
-      <img class="card-img-top img-responsive" src="img/feature6.jpg" alt="Card image cap">
-      <div class="my-overlay"><span class="my-span">View Details</span></div>
-      </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>3343 Better Street</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <ul class="my-room nav">
-                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        <!--  </div> card deck-->
-      <!--  </div>-->
-        <!--main second row/-->
-
-    <!--  <div class="row">-->
-        <!--  <div class="card-deck mt-4">-->
-
-            <div class="card mix blue ">
-              <a href="#" class="a-hover">
-      <img class="card-img-top img-responsive" src="img/feature7.jpg" alt="Card image cap">
-      <div class="my-overlay"><span class="my-span">View Details</span></div>
-      </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>4847 Mandan Road</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <ul class="my-room nav">
-                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card mix green ">
-              <a href="#" class="a-hover">
-      <img class="card-img-top img-responsive" src="img/feature8.jpg" alt="Card image cap">
-      <div class="my-overlay"><span class="my-span">View Details</span></div>
-      </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>3091 Mount Street</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <ul class="my-room nav">
-                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card mix  pink green ">
-              <a href="" class="a-hover">
-      <img class="card-img-top img-responsive" src="img/feature9.jpg" alt="Card image cap">
-        <div class="my-overlay"><span class="my-span">View Details</span></div>
-      </a>
-              <div class="card-body">
-                <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2143 Diane Street</h5>
-                <p class="card-text"></p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <ul class="my-room nav ">
-                    <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      <!--    </div>-->
-
-        <!--</div>-->
-        <!--main second row/-->
-
-        <!--  </div>-->
-        <!--/first gallery row-->
 
 
 
@@ -359,114 +335,12 @@
 
 
 
-    <div class="footer">
-      <!-- Footer -->
-      <footer class="page-footer font-small blue pt-4 mt-4">
 
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-
-          <!-- Grid row -->
-          <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-4 mt-md-0 mt-3">
-
-              <!-- Content -->
-              <h5 class="navbar-brand" href="#"><i class="fas fa-home"></i>MyRealEstate</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius urna turpis, in ullamcorper felis mollis eu. Integer vel nisl nec metus consequat laoreet. In nunc risus, ultrices vitae urna vitae, tincidunt aliquam libero. Curabitur
-                eu lorem orci. Vivamus malesuada convallis lectus, id congue massa vehicula interdum.</p>
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-2 mb-md-0 mb-3">
-
-              <!-- Links -->
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Home</a>
-                </li>
-                <li>
-                  <a href="#!">For landlords</a>
-                </li>
-                <li>
-                  <a href="#!">For tenants</a>
-                </li>
-                <li>
-                  <a href="#!">Pricing</a>
-                </li>
-              </ul>
-
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-2 mb-md-0 mb-3">
-
-              <!-- Links -->
-              <h5 class="text-uppercase">Company</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Contact us</a>
-                </li>
-                <li>
-                  <a href="#!">About us</a>
-                </li>
-                <li>
-                  <a href="#!">FAQ</a>
-                </li>
-              </ul>
-
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-2 mb-md-0 mb-3">
-
-              <!-- Links -->
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-
-            </div>
-            <!-- Grid column -->
-
-          </div>
-          <!-- Grid row -->
-
-        </div>
-        <!-- Footer Links -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-          <a href="#">MyRealEstate.com</a>
-        </div>
-        <!-- Copyright -->
-
-      </footer>
-      <!-- Footer -->
-    </div>
-  </div>
   <!--end main page-->
+</div>
 
   <!--js-->
-
+</div>
   <!--<script src='node_modules/isotope-layout/dist/isotope.pkgd.js'></script>-->
 <!--  <script src='node_modules/popper.js/dist/popper.js'></script>-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
