@@ -6374,6 +6374,9 @@ hr.style-one {
   padding-top: 48px;
   /* Space for fixed navbar */ }
 
+.card {
+  margin: 10px; }
+
 .fa-map-marker {
   color: #33C490; }
 

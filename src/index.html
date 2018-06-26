@@ -5,15 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MyRealEstate</title>
+  <link rel="stylesheet" href="css/jplist.core.min.css">
+  <link rel="stylesheet" href="css/jplist.jquery-ui-bundle.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom.css">
-  <script>
-
-    // On document ready:
-
-
-
-  </script>
 
 
 </head>
@@ -41,19 +36,19 @@
   <!--/header and nav-->
 
   <!--start main page-->
-  <div class="container-fluid main-page h-100">
+  <div class="container-fluid main-page h-100" id="demo">
 
     <div class="d-flex justify-content-end flex-wrap flex-md-nowrap align-items-center mt-3 pt-5 pb-2 mb-3 border-bottom">
       <!-- TODO: fix sorting js -->
-      <div class="col-md-3 controls">
+      <div class="col-md-3 jplist-panel controls">
 
 
-        <select  class="custom-select custom-select-sm mt-2 mb-3 select-sort">
-  <option class="unselected" value="">Sort: Featured</option>
-  <option  value="default:asc">Asc</option>
-  <option  value="default:desc">Desc</option>
-  <option value="price:asc">Price(Lo-Hi)</option>
-  <option value="price:desc">Price(Hi-Lo)</option>
+        <select  class="custom-select custom-select-sm mt-2 mb-3 jplist-select" data-control-type="sort-select" data-control-name="sort" data-control-action="sort">
+  <option  data-path="default">Sort by</option>
+  <option  data-path=".date" data-order="asc" data-type="datetime">Asc</option>
+  <option  data-path=".date" data-order="desc"  data-type="datetime">Desc</option>
+  <option data-path=".price" data-order="asc" data-type="number">Price(Lo-Hi)</option>
+  <option data-path=".price" data-order="desc" data-type="number">Price(Hi-Lo)</option>
   </select>
 
       </div>
@@ -68,7 +63,7 @@
           <div class="nav flex-column controls filter " id="side-filter">
             <h6>Property Type</h6>
             <select class="custom-select custom-select-sm mt-2 mb-3 select-filter" >
-      <option  value="all">Any</option>
+      <option  data>Any</option>
       <option  value=".green">House</option>
       <option  value=".blue">Apartment</option>
       <option   value=".pink">Condo</option>
@@ -143,14 +138,15 @@
   <!--start main---------------------------------------------->
   <!-- TODO: fix padding of span-info objects, create overflow -->
       <main role="main" class="d-flex my-main col-12 col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div class="container" id="container">
-        <div class="row">
-          <div class="card-columns">
-    <div class="card mix pink blue" data-price="59.99" data-published-date="2016-11-24">
+      <div class="container">
+        <div class="row list">
+    <div class="card list-item">
       <a href="#" class="a-hover">
       <img class="card-img-top " src="img/feature1.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">06/27/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -165,11 +161,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix blue green" data-price="14.99" data-published-date="2016-11-24">
+      <div class="card list-item">
           <a href="#" class="a-hover">
       <img class="card-img-top " src="img/feature2.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">07/04/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -184,11 +182,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix pink"  data-price="600.99" data-published-date="2016-10-12">
+      <div class="card list-item">
         <a href="#" class="a-hover">
       <img class="card-img-top " src="img/feature3.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">07/19/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -203,11 +203,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix blue" data-published-date="2016-09-30">
+      <div class="card list-item">
           <a href="#" class="a-hover">
       <img class="card-img-top " src="img/feature4.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">07/26/2018</small>
       <div class="card-body">
       <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -222,11 +224,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix green" data-published-date="2016-09-03">
+      <div class="card list-item">
         <a href="#" class="a-hover">
       <img class="card-img-top " src="img/feature5.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">07/03/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -241,11 +245,13 @@
                 </div>
       </div>
     </div>
-      <div class="card pink green" data-published-date="2016-09-03">
+      <div class="card list-item">
         <a href="#" class="a-hover">
       <img class="card-img-top" src="img/feature6.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">08/04/2018</small>
       <div class="card-body">
       <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -260,11 +266,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix green" data-published-date="2016-04-30">
+      <div class="card list-item">
         <a href="#" class="a-hover">
       <img class="card-img-top" src="img/feature7.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">08/07/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -279,11 +287,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix green blue" data-published-date="2016-04-24" >
+      <div class="card list-item" >
         <a href="#" class="a-hover">
       <img class="card-img-top" src="img/feature8.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">09/20/2018</small>
       <div class="card-body">
       <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -298,11 +308,13 @@
                 </div>
       </div>
     </div>
-      <div class="card mix pink" data-published-date="2016-03-12" >
+      <div class="card list-item">
           <a href="#" class="a-hover">
       <img class="card-img-top" src="img/feature9.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="price">$2000</small>
+      <small class="date">10/05/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
         <p class="card-text"></p>
@@ -317,8 +329,7 @@
                 </div>
       </div>
     </div>
-      </div>
-      <!--card columns/-->
+
         </div>
         <!--first row-->
 
@@ -341,10 +352,31 @@
 
   <!--js-->
 </div>
-  <!--<script src='node_modules/isotope-layout/dist/isotope.pkgd.js'></script>-->
+
+<script>
+
+  // On document ready:
+  $('document').ready(function(){
+
+             //check all jPList javascript options here
+             $('#demo').jplist({
+                itemsBox: '.list',
+                itemPath: '.list-item',
+                panelPath: '.jplist-panel'
+             });
+
+          });
+
+
+</script>
+
+
 <!--  <script src='node_modules/popper.js/dist/popper.js'></script>-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.sort-bundle.min.js" ></script>
+<script src="js/jplist.filter-dropdown-bundle.min.js"></script>
+<script src="js/jplist.jquery-ui-bundle.min.js"></script>
 <script src="js/custom.js"></script>
 
 
