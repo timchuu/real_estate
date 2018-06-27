@@ -57,19 +57,17 @@
     <!--end sort row-->
     <div class="row">
       <nav class="col-md-2 d-none d-md-block d-md-none bg-light sidebar">
-        <div class="sticky-sidebar">
-          <form id="#filterform" >
-
-          <div class="nav flex-column controls filter " id="side-filter">
+        <div class="sticky-sidebar ">
+          <div class="nav flex-column jplist-panel controls" id="side-filter">
             <h6>Property Type</h6>
-            <select class="custom-select custom-select-sm mt-2 mb-3 select-filter" >
-      <option  data>Any</option>
-      <option  value=".green">House</option>
-      <option  value=".blue">Apartment</option>
-      <option   value=".pink">Condo</option>
-    <!--  <option  value=".category-4">Townhouse</option>-->
+            <select class="custom-select custom-select-sm mt-2 mb-3 jplist-select" data-control-type="filter-select" data-control-name="category-filter" data-control-action="filter" >
+      <option  data-path="default">Any</option>
+      <option  data-path=".house">House</option>
+      <option  data-path=".apartment">Apartment</option>
+      <option   data-path=".condo">Condo</option>
+      <option  data-path=".townhouse">Townhouse</option>
     </select>
-    </form>
+
             <h6>Price Range</h6>
 
             <div class="form-group">
@@ -138,13 +136,18 @@
   <!--start main---------------------------------------------->
   <!-- TODO: fix padding of span-info objects, create overflow -->
       <main role="main" class="d-flex my-main col-12 col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div class="container">
+      <div class="container ">
+
+
+
         <div class="row list">
+            <div class="">
     <div class="card list-item">
       <a href="#" class="a-hover">
       <img class="card-img-top " src="img/feature1.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
+      <small class="house apartment">House/Apartment</small>
       <small class="price">$2000</small>
       <small class="date">06/27/2018</small>
       <div class="card-body">
@@ -166,7 +169,8 @@
       <img class="card-img-top " src="img/feature2.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$2200</small>
       <small class="date">07/04/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -187,7 +191,8 @@
       <img class="card-img-top " src="img/feature3.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="apartment">Apartment</small>
+      <small class="price">$2500</small>
       <small class="date">07/19/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -208,7 +213,8 @@
       <img class="card-img-top " src="img/feature4.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$2800</small>
       <small class="date">07/26/2018</small>
       <div class="card-body">
       <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -229,7 +235,8 @@
       <img class="card-img-top " src="img/feature5.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$3000</small>
       <small class="date">07/03/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -250,7 +257,8 @@
       <img class="card-img-top" src="img/feature6.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$2765</small>
       <small class="date">08/04/2018</small>
       <div class="card-body">
       <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -271,7 +279,8 @@
       <img class="card-img-top" src="img/feature7.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$2900</small>
       <small class="date">08/07/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -292,7 +301,8 @@
       <img class="card-img-top" src="img/feature8.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$2300</small>
       <small class="date">09/20/2018</small>
       <div class="card-body">
       <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -313,7 +323,8 @@
       <img class="card-img-top" src="img/feature9.jpg" alt="Card image cap">
       <div class="my-overlay"><span class="my-span">View Details</span></div>
       </a>
-      <small class="price">$2000</small>
+      <small class="house">House</small>
+      <small class="price">$2920</small>
       <small class="date">10/05/2018</small>
       <div class="card-body">
         <h5 class="card-title"><span><i class="fas fa-map-marker"></i></span>2303 Sugarfoot Lane</h5>
@@ -333,7 +344,7 @@
         </div>
         <!--first row-->
 
-
+  </div>
 
 
 
@@ -356,16 +367,7 @@
 <script>
 
   // On document ready:
-  $('document').ready(function(){
 
-             //check all jPList javascript options here
-             $('#demo').jplist({
-                itemsBox: '.list',
-                itemPath: '.list-item',
-                panelPath: '.jplist-panel'
-             });
-
-          });
 
 
 </script>
@@ -375,8 +377,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.core.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.sort-bundle.min.js" ></script>
-<script src="js/jplist.filter-dropdown-bundle.min.js"></script>
-<script src="js/jplist.jquery-ui-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.filter-toggle-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.jquery-ui-bundle.min.js"></script>
 <script src="js/custom.js"></script>
 
 

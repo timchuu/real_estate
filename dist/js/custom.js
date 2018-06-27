@@ -1,0 +1,1 @@
+$("document").ready(function(){$("#demo").jplist({itemsBox:".list",itemPath:".list-item",panelPath:".jplist-panel",effect:"fade",duration:300,fps:24})});
