@@ -1,1 +1,1 @@
-$("document").ready(function(){$("#demo").jplist({itemsBox:".list",itemPath:".list-item",panelPath:".jplist-panel",effect:"fade",duration:300,fps:24})});
+$("document").ready(function(){jQuery.fn.jplist.settings={pricesSlider:function(e,i,s){e.slider({min:0,max:3e3,range:!0,values:[0,3e3],slide:function(e,t){i.text("$"+t.values[0]),s.text("$"+t.values[1])}})},priesValues:function(e,t,i){t.text("$"+e.slider("values",0)),i.text("$"+e.slider("values",1))}},$("#demo").jplist({itemsBox:".list",itemPath:".list-item",panelPath:".jplist-panel",effect:"fade",duration:300,fps:24})});
