@@ -81,25 +81,29 @@
               <div class="value" data-type="next-value">$3000</div>
             </div>
   </div>
-
-            <div class="form-group">
+                <div class="jplist-panel">
+            <div class="form-group ">
               <label for="sel1">Bed</label>
-              <select class="custom-select custom-select-sm mt-5 mb-3 w-50" id="sel1">
-      <option selected>Any</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3+</option>
+              <select class="custom-select custom-select-sm mt-5 mb-3 w-50 jplist-select" data-control-type="filter-select" data-control-name="group-filter" data-control-action="filter" id="sel1">
+      <option data-path="default">Any</option>
+      <option data-path=".group1">1</option>
+      <option data-path=".group2">2</option>
+      <option data-path=".group3">3+</option>
     </select>
+
             </div>
+            </div>
+              <div class="jplist-panel">
             <div class="form-group">
               <label for="sel1">Bath</label>
-              <select class="custom-select custom-select-sm mt-5 mb-3 w-50">
-      <option selected>Any</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3+</option>
+              <select class="custom-select custom-select-sm mt-5 mb-3 w-50 jplist-select" data-control-type="filter-select" data-control-name="group-filter" data-control-action="filter">
+      <option data-path="default">Any</option>
+      <option  data-path=".group4">1</option>
+      <option  data-path=".group5">2</option>
+      <option  data-path=".group6">3+</option>
     </select>
             </div>
+          </div>
 <!-- TODO: spacing and sidebar functionality -->
             <div class="row">
               <h6>Amnenities</h6>
@@ -164,8 +168,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group3">6 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group6 ">5 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -186,8 +190,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group3">4 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group6">3 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -208,8 +212,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group2">2 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group5">2 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -230,8 +234,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group1">1 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group4">1 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -252,8 +256,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group2">2 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group5">2 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -274,8 +278,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group3">3 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group5">2 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -296,8 +300,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group3">3 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group4">1 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -318,8 +322,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group1">1 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group4">1 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
@@ -340,8 +344,8 @@
         <div class="row">
                   <ul class="my-room nav">
                     <li class="my-room-info"><i class="fas fa-cube"></i><span class="span-info">540m2</span></li>
-                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info">6 rooms</span></li>
-                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info">4 bathrooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-inbox"></i><span class="span-info group2">2 rooms</span></li>
+                    <li class="my-room-info"><i class="fas fa-bath"></i><span class="span-info group4">1 bathrooms</span></li>
                   </ul>
                 </div>
       </div>
