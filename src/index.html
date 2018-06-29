@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/css/jplist.jquery-ui-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/css/jplist.filter-dropdown-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/css/jplist.filter-toggle-bundle.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom.css">
 
@@ -29,6 +30,7 @@
           <button type="submit" class="my-button fas fa-search"></button>
         </form>
         <a class="nav-item nav-link ml-auto" href="#">Log in</a>
+        <span class="nav-span">|</span>
         <a class="nav-item nav-link" href="#">Sign up</a>
       </div>
     </nav>
@@ -108,35 +110,59 @@
             <div class="row">
               <h6>Amnenities</h6>
             </div>
+            <div class="jplist-panel">
             <!-- amenities-->
   <!-- TODO: change color of check marks to theme green -->
-            <div class="row">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Wifi</label>
+
+              <div class="jplist-group"
+                data-control-type="checkbox-text-filter"
+           data-control-action="filter"
+           data-control-name="keywords"
+           data-path=".keywords"
+           data-logic="or">
+           <label for="pets">Pets Allowed</label>
+           <input
+             value="pets"
+             id="pets"
+             type="checkbox"
+           />
+
+            <label for="washer">Washer</label>
+           <input
+             value="washer"
+             id="washer"
+             type="checkbox"
+           />
+
+            <label for="dryer">Dryer</label>
+           <input
+             value="dryer"
+             id="dryer"
+             type="checkbox"
+           />
+
+           <label for="pool">Pool</label>
+           <input
+             value="pool"
+             id="pool"
+             type="checkbox"
+           />
+
+
+        </div>
+
+
+
+
+
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Pool</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Washer/Dryer</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Pets Allowed</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">On-site Parking</label>
-              </div>
-            </div>
-            <!--/checkboxes-->
+              <!--jplist group-->
+
 
           </div>
           <!--flex-column-->
-
+          </div>
+<!--jlist-panel check-->
         </div>
         <!--/sticky-sidebar-->
 
@@ -393,6 +419,9 @@
 <script src="js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.sort-bundle.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.filter-dropdown-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplist/5.2.0/js/jplist.filter-toggle-bundle.min.js">
+
+</script>
 
 
 

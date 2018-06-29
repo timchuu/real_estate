@@ -6299,6 +6299,9 @@ body {
 section {
   display: -webkit-box; }
 
+.nav-span {
+  color: #33C490; }
+
 .nav-item {
   font-size: 0.8em; }
 
